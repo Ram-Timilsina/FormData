@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "./App.css";
-import FormData from "./FormData";
+import ComplaintForm from "./ComplaintForm";
 import Practice from "./Practice";
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <div>
           <ul>
             <li>
-              <NavLink to="/">Form Data</NavLink>
+              <NavLink to="/">ComplaintForm</NavLink>
             </li>
             <li>
               <NavLink to="/practice">Formik Practice</NavLink>
@@ -19,7 +19,7 @@ function App() {
         </div>
 
         <Routes>
-          <Route path="/" element={<FormData />}></Route>
+          <Route path="/" element={<ComplaintForm />}></Route>
           <Route path="/practice" element={<Practice />}></Route>
         </Routes>
       </BrowserRouter>
